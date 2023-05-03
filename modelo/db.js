@@ -1,5 +1,4 @@
 const mysql = require('mysql');
-const { route } = require('../router');
 
 const conn = mysql.createConnection({
     host:'localhost',
@@ -17,6 +16,6 @@ conn.connect((error)=>{
 });
 
 
-module.exports = conexion;
+module.exports = conn;
 
 
