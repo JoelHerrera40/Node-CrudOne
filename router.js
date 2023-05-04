@@ -22,5 +22,7 @@ router.get('/create',(req, res,)=>{
 })
 
 
+const crud= require ('./controller/crud');
+router.post('/save', crud.save);
 
 module.exports= router;
