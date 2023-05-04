@@ -45,7 +45,7 @@
     <div class="container">
         <a href="/create" class="btn btn-outline-primary mt-4"><box-icon name='user-plus'></box-icon></a>
     
-        <table> 
+        <table class="table table-bordered table-striped text-center mt-4"> 
 
             <thead>
                 <tr class="bg-primary text-white">
@@ -64,11 +64,11 @@
 
                     
                     <td><%= user.id%></td>
-                    <td><%= user.users%></td>
+                    <td><%= user.user%></td>
                     <td><%= user.rol%></td>
                     <td>
-                        <a href="/edit" class="btn-outline-info">Edit</a>
-                        <a href="/delete" class="btn-outline-danger">Delete</a>
+                        <a href="/edit" class=" btn btn-outline-info">Edit</a>
+                        <a href="/delete" class="btn btn-outline-danger">Delete</a>
                     </td>
                 </tr>
                 <% })%>
