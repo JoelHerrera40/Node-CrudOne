@@ -35,6 +35,20 @@ router.get('/edit/:id',(req, res,)=>{
  })
  });
 
+ //BORRAR USUARIOS
+
+ router.get('/delete/:id',(req ,res) =>{
+     const id= req.params.id;
+     conn.query('DELETE FROM users WHERE id = ?',[id], (error,results)=>{
+        if (error) {
+            throw error;
+            
+        }else{
+            res.redirect('/');
+        }
+    
+ })
+  });
 
 const crud= require ('./controller/crud');
 router.post('/save', crud.save);
